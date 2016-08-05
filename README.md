@@ -24,7 +24,7 @@ No known bugs.
 
 ## Specifications
 
-The program should handle... | Example Input | Example Output
+The program should ... | Example Input | Example Output
 ----- | ----- | -----
 Input a GitHub username and output a list of the account's repos, including the repo descriptions | Username: pullashradha | "address-book: Practice with objects", "AddressBook: Address book web app"...
 
