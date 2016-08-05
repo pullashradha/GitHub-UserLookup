@@ -19,8 +19,8 @@ form h2 {
   margin-bottom: 15px;
 }
 
-form input {
-  font-size: 15pt;
+#username-input {
+  font-size: 18pt;
 }
 
 .btn-success {
@@ -29,12 +29,20 @@ form input {
 }
 
 #account-info h1 {
+  font-size: 35pt;
   margin-top: 75px;
   text-align: center;
 }
 
 #account-info h2 {
   text-align: center;
-  font-size: 15pt;
-  margin-top: 50px;
+  font-size: 22pt;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#show-repo {
+  font-size: 18pt;
+  margin-left: 50px;
+  margin-bottom: 150px;
 }
