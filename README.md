@@ -11,7 +11,12 @@ This program is a web app that will allow a user to look up public accounts in G
 ## Setup/Installation Requirements
 
 * Clone this repository
-* Open index.html in Terminal
+* To set up package managers, type the following into the command line:
+  * $ npm install
+  * $ bower install
+* To view the webpage, type the following:
+  * $ gulp build
+  * $ gulp server
 
 ## Known Bugs
 
