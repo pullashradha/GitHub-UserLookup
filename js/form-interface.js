@@ -1,12 +1,30 @@
 var apiKey = require ("./../.env").apiKey;
-var getUser = require ("./../js/account.js").getUser;
-var getRepos = require ("./../js/account.js").getRepos;
+// var Account = require ("./../js/account.js").accountModule;
+
 
 $(document).ready(function(event) {
   $("#username-form").submit(function(event) {
     event.preventDefault();
     var usernameInput = $("#username-input").val();
-    getUser(usernameInput);
-    getRepos(usernameInput);
+    $.get("https://api.github.com/users/" + usernameInput + "?access_token=" + apiKey).then(function(response) {
+      $("#show-name").text(response.name);
+      $("#repo-number").show();
+      $("#show-repo-number").text(response.public_repos);
+    }).fail(function(error) {
+      $("#show-name").text(error.responseJSON.message);
+    });
+    $.get("https://api.github.com/users/" + usernameInput + "/repos?access_token=" + apiKey + "&per_page=1000").then(function(response) {
+      for (var i = 0; i < response.length; i ++)
+      {
+        if (response[i].description === null || response[i].description === "") {
+          $("#show-repo").append("<li>" + response[i].name + "</li>");
+        }
+        else {
+          $("#show-repo").append("<li>" + response[i].name + ": " + response[i].description + "</li>");
+        }
+      }
+    }).fail(function(error) {
+      $("#show-repo").text(error.responseJSON.message);
+    });
   });
 });

@@ -41,6 +41,10 @@ form h2 {
   margin-bottom: 40px;
 }
 
+#repo-number {
+  display: none;
+}
+
 #show-repo {
   font-size: 18pt;
   margin-left: 50px;
