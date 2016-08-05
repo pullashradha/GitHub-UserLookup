@@ -6,13 +6,13 @@ body {
 
 .page-header {
   text-align: center;
-  font-size: 50pt;
+  font-size: 60pt;
 }
 
 form {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 90px;
 }
 
 form h2 {
@@ -35,18 +35,31 @@ form h2 {
   text-align: center;
 }
 
-#account-info h2 {
+#account-info #show-url {
   text-align: center;
-  font-size: 22pt;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  font-size: 15pt;
+  margin-bottom: 25px;
 }
 
-#repo-number {
+#account-info #repo-number {
+  text-align: center;
+  font-size: 22pt;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#repo-number, #following-header {
   display: none;
 }
 
-#show-repo {
+#following-header {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#show-repo-list {
   font-size: 18pt;
   margin-left: 50px;
   margin-right: 50px;

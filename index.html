@@ -17,8 +17,14 @@
     </form>
     <div id="account-info">
       <h1 id="show-name"></h1>
-      <h2 id="repo-number">Number of public repositories = <span id="show-repo-number"></span></h2>
-      <ul id="show-repo"></ul>
+      <a href="/"><h2 id="show-url"></h2></a>
+      <h2 id="repo-number">Public repositories: <span id="show-repo-number"></span></h2>
+      <div id="following-header" class="row">
+        <h2 class="col-xs-5">Followers: <span id="show-followers"></span></h2>
+        <h2 class="col-xs-2">|</h2>
+        <h2 class="col-xs-5">Following: <span id="show-following"></span></h2>
+      </div>
+      <ul id="show-repo-list"></ul>
     </div>
   </body>
 </html>
