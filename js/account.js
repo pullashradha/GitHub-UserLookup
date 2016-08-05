@@ -2,19 +2,18 @@ var apiKey = require ("./../.env").apiKey;
 
 var getUser = function(usernameInput) {
   $.get("https://api.github.com/users/" + usernameInput + "?access_token=" + apiKey).then(function(response) {
-    console.log (response.name);
-    console.log ("Number of public repositories = " + response.public_repos);
+    $("#show-name").text(response.name);
+    $("#show-repo-number").text("Number of public repositories = " + response.public_repos);
   }).fail(function(error) {
     console.log (error.responseJSON.message);
   });
 };
 
 var getRepos = function(usernameInput) {
-  $.get("https://api.github.com/users/" + usernameInput + "/repos?page=2&per_page=1000access_token=" + apiKey).then(function(response) {
+  $.get("https://api.github.com/users/" + usernameInput + "/repos?per_page=1000access_token=" + apiKey).then(function(response) {
     for (var i = 0; i < response.length; i ++)
     {
-      console.log (response[i].name);
-      console.log (response[i].description);
+      $("#show-repo").append("<li>" + response[i].name + ": " + response[i].description + "</li>");
     }
   }).fail(function(error) {
     console.log (error.responseJSON.message);
