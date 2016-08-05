@@ -5,7 +5,7 @@ $(document).ready(function(event) {
   $("#username-form").submit(function(event) {
     event.preventDefault();
     var usernameInput = $("#username-input").val();
-    $("#show-repo").text(""); //Resets getRepos() to blank every time submit btn is entered
+    $("#show-repo-list").text(""); //Resets getRepos() to blank every time submit btn is entered
     getUser(usernameInput);
     getRepos(usernameInput);
   });

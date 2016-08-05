@@ -7,7 +7,6 @@ var showRepoError = require ("./../js/display-info.js").repoError;
 var getUser = function(usernameInput) {
   if (apiKey) {
     $.get("https://api.github.com/users/" + usernameInput + "?access_token=" + apiKey).then(function(response) {
-      console.log(response);
       showAccount(response);
     }).fail(function(error) {
       showNameError(response);

@@ -1,6 +1,10 @@
 //UI Functions for showing account info on web page
 var showAccount = function(response) {
-  $("#show-name").text(response.name);
+  if (response.name === null) {
+    $("#show-name").text(response.login);
+  } else {
+    $("#show-name").text(response.name);
+  }
   $("#show-url").text(response.html_url);
   $("#repo-number").show();
   $("#show-repo-number").text(response.public_repos);
