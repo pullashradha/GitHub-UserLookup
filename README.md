@@ -26,13 +26,14 @@ No known bugs.
 
 The program should handle... | Example Input | Example Output
 ----- | ----- | -----
-Spec 1 | Example Input: | Example Output:
+Input a GitHub username and output a list of the account's repos, including the repo descriptions | Username: pullashradha | "address-book: Practice with objects", "AddressBook: Address book web app"...
 
 ## Future Features
 
 HTML | CSS | JavaScript
 ----- | ----- | -----
---- | --- | Allow user to input new username & get correct repos without having to refresh page
+Add links to the repo names | --- | Make links go to correct account
+--- | --- | Add dates for when repos were created & order by date
 
 ## Support and Contact Details
 
