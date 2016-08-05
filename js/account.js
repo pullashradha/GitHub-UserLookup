@@ -1,4 +1,4 @@
-var apiKey = require ("./../.env").apiKey;
+var apiKey = require ("./../.env").apiKey; //Assign apiKey as an empty variable if no .env file
 var showAccount = require ("./../js/display-info.js").accountModule;
 var showRepoList = require ("./../js/display-info.js").repoModule;
 var showNameError = require ("./../js/display-info.js").nameError;
