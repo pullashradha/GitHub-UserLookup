@@ -2,9 +2,6 @@
   "name": "github-api",
   "description": "",
   "main": "gulpfile.js",
-  "authors": [
-    "Shradha Pulla <pullashradha@gmail.com>"
-  ],
   "license": "ISC",
   "homepage": "",
   "ignore": [
