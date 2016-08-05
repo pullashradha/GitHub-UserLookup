@@ -1,0 +1,10 @@
+* {
+  font-family: serif;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  text-align: center;
+  font-size: 65pt;
+}

@@ -1,1 +1,7 @@
+.DS_Store
 .git/
+bower_components/
+node_modules/
+build/
+tmp/
+.env
