@@ -1,7 +1,7 @@
 {
-  "name": "github-api",
+  "name": "github-userlookup",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "account.js",
   "license": "ISC",
   "homepage": "",
   "ignore": [

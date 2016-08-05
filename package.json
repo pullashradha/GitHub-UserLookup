@@ -1,8 +1,8 @@
 {
-  "name": "github-api",
+  "name": "github-userlookup",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "devDependencies": {
