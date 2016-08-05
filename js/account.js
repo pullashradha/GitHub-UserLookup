@@ -5,12 +5,12 @@ var getUser = function(usernameInput) {
     $("#show-name").text(response.name);
     $("#show-repo-number").text("Number of public repositories = " + response.public_repos);
   }).fail(function(error) {
-    console.log (error.responseJSON.message);
+    $("#show-name").text(error.responseJSON.message);
   });
 };
 
 var getRepos = function(usernameInput) {
-  $.get("https://api.github.com/users/" + usernameInput + "/repos?per_page=1000access_token=" + apiKey).then(function(response) {
+  $.get("https://api.github.com/users/" + usernameInput + "/repos?access_token=" + apiKey + "&per_page=1000").then(function(response) {
     for (var i = 0; i < response.length; i ++)
     {
       if (response[i].description === null || response[i].description === "") {
@@ -21,7 +21,7 @@ var getRepos = function(usernameInput) {
       }
     }
   }).fail(function(error) {
-    console.log (error.responseJSON.message);
+    $("#show-repo").text(error.responseJSON.message);
   });
 };
 
