@@ -11,14 +11,15 @@ var getUser = function(usernameInput) {
 };
 
 var getRepos = function(usernameInput) {
+  $("#show-repo").text("");
   $.get("https://api.github.com/users/" + usernameInput + "/repos?access_token=" + apiKey + "&per_page=100").then(function(response) {
     for (var i = 0; i < response.length; i ++)
     {
       if (response[i].description === null || response[i].description === "") {
-        $("ul#show-repo").append("<li>" + response[i].name + "</li>");
+        $("#show-repo").append("<li>" + response[i].name + "</li>");
       }
       else {
-        $("ul#show-repo").append("<li>" + response[i].name + ": " + response[i].description + "</li>");
+        $("#show-repo").append("<li>" + response[i].name + ": " + response[i].description + "</li>");
       }
     }
   }).fail(function(error) {
