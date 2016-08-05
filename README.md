@@ -32,7 +32,7 @@ Spec 1 | Example Input: | Example Output:
 
 HTML | CSS | JavaScript
 ----- | ----- | -----
-Example Feature 1 | Example Feature 1 | Example Feature 1
+--- | --- | Allow user to input new username & get correct repos without having to refresh page
 
 ## Support and Contact Details
 
