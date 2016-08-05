@@ -1,3 +1,4 @@
+//UI Functions for showing account info on web page
 var showAccount = function(response) {
   $("#show-name").text(response.name);
   $("#repo-number").show();
