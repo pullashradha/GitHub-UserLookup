@@ -1,7 +1,7 @@
 {
   "name": "github-userlookup",
   "description": "",
-  "main": "account.js",
+  "main": "index.js",
   "license": "ISC",
   "homepage": "",
   "ignore": [
@@ -16,5 +16,8 @@
     "bootstrap": "^3.3.7",
     "moment": "^2.14.1"
   },
-  "private": true
+  "private": true,
+  "authors": [
+    "Shradha Pulla <pullashradha@gmail.com>"
+  ]
 }

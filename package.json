@@ -1,12 +1,11 @@
 {
   "name": "github-userlookup",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### Modern JS Apps Independent Project for Epicodus, 08/05/2016",
   "main": "index.js",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bower": "^1.7.9",
     "bower-files": "^3.13.3",
     "browser-sync": "^2.14.0",
     "browserify": "^13.1.0",
@@ -14,15 +13,11 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.1",
-    "gulp-uglify": "^1.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.2",
     "vinyl-source-stream": "^1.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+"
-  },
-  "homepage": "",
-  "description": ""
+  }
 }
