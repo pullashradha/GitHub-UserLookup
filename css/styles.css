@@ -9,6 +9,11 @@ body {
   font-size: 60pt;
 }
 
+p {
+  text-align: center;
+  font-size: 15pt;
+}
+
 form {
   margin-left: 75px;
   margin-right: 75px;
