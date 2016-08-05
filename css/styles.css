@@ -12,7 +12,7 @@ body {
 form {
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 form h2 {
@@ -29,7 +29,7 @@ form input {
 }
 
 #account-info h1 {
-  margin-top: 100px;
+  margin-top: 75px;
   text-align: center;
 }
 
