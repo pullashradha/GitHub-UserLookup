@@ -16,10 +16,11 @@ This program can only be accessed on computer with Git and Atom software and npm
 * To set up package managers, type the following into the command line:
   * $ npm install
   * $ bower install
-* Create a .env file to hold the GitHub API key:
+* Create a .env file in the main directory. Use the following format to hold the API key:
   ```
-  .env
+  ```
   exports.apiKey = "[Key Value Here]";
+  ```
   ```
 * To view the webpage, type the following:
   * $ gulp build
