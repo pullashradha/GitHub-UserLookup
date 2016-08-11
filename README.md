@@ -18,9 +18,7 @@ This program can only be accessed on computer with Git and Atom software and npm
   * $ bower install
 * Create a .env file in the main directory. Use the following format to hold the API key:
   ```
-  ```
   exports.apiKey = "[Key Value Here]";
-  ```
   ```
 * To view the webpage, type the following:
   * $ gulp build
