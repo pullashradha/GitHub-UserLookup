@@ -10,12 +10,17 @@ This program is a web app that will allow a user to look up public accounts in G
 
 ## Setup/Installation Requirements
 
-This program can only be accessed on computer with Git, Atom, npm, bower, and gulp installed globally.
+This program can only be accessed on computer with Git and Atom software and npm, bower, and gulp globally installed.
 
 * Clone this repository
 * To set up package managers, type the following into the command line:
   * $ npm install
   * $ bower install
+* Create a .env file to hold the GitHub API key:
+  ```
+  .env
+  exports.apiKey = "[Key Value Here]";
+  ```
 * To view the webpage, type the following:
   * $ gulp build
   * $ gulp server
@@ -48,6 +53,7 @@ Contact Epicodus for support in running this program.
 * Bootstrap
 * jQuery
 * JavaScript
+* GitHub API
 
 ## Links
 
