@@ -1,18 +1,18 @@
 var apiKey = require ("./../.env").apiKey; //Assign apiKey as an empty variable if no .env file
-var showAccount = require ("./../js/display-info.js").accountModule;
-var showRepoList = require ("./../js/display-info.js").repoModule;
-var showNameError = require ("./../js/display-info.js").nameError;
-var showRepoError = require ("./../js/display-info.js").repoError;
 
-var getUser = function(usernameInput) {
+function Account (UserName) {
+  this.username = UserName;
+}
+
+Account.prototype.getUser = function() {
   if (apiKey) {
-    $.get("https://api.github.com/users/" + usernameInput + "?access_token=" + apiKey).then(function(response) {
+    $.get("https://api.github.com/users/" + this.username + "?access_token=" + apiKey).then(function(response) {
       showAccount(response);
     }).fail(function(error) {
       showNameError(response);
     });
   } else {
-    $.get("https://api.github.com/users/" + usernameInput).then(function(response) {
+    $.get("https://api.github.com/users/" + this.username).then(function(response) {
       showAccount(response);
     }).fail(function(error) {
       showNameError(response);
@@ -20,15 +20,15 @@ var getUser = function(usernameInput) {
   }
 };
 
-var getRepos = function(usernameInput) {
+Account.prototype.getRepos = function() {
   if (apiKey) {
-    $.get("https://api.github.com/users/" + usernameInput + "/repos?access_token=" + apiKey + "&per_page=100").then(function(response) {
+    $.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + apiKey + "&per_page=100").then(function(response) {
       showRepoList(response);
     }).fail(function(error) {
       showRepoError(response);
     });
   } else {
-    $.get("https://api.github.com/users/" + usernameInput + "/repos?per_page=100").then(function(response) {
+    $.get("https://api.github.com/users/" + this.username + "/repos?per_page=100").then(function(response) {
       showRepoList(response);
     }).fail(function(error) {
       showRepoError(response);
@@ -36,5 +36,4 @@ var getRepos = function(usernameInput) {
   }
 };
 
-exports.getUser = getUser;
-exports.getRepos = getRepos;
+exports.accountModule = Account;
