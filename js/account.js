@@ -4,7 +4,7 @@ function Account (UserName) {
   this.username = UserName;
 }
 
-Account.prototype.getUser = function() {
+Account.prototype.getUser = function(showAccount, showNameError) {
   if (apiKey) {
     $.get("https://api.github.com/users/" + this.username + "?access_token=" + apiKey).then(function(response) {
       showAccount(response);
@@ -20,7 +20,7 @@ Account.prototype.getUser = function() {
   }
 };
 
-Account.prototype.getRepos = function() {
+Account.prototype.getRepos = function(showRepoList, showRepoError) {
   if (apiKey) {
     $.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + apiKey + "&per_page=100").then(function(response) {
       showRepoList(response);

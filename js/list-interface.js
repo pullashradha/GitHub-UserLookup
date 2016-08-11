@@ -14,6 +14,10 @@ var showAccount = function(response) {
   $("#show-following").text(response.following);
 };
 
+var showNameError = function(response) {
+  $("#show-name").text(error.responseJSON.message);
+};
+
 var showRepoList = function(response) {
   for (var i = 0; i < response.length; i ++)
   {
@@ -26,10 +30,6 @@ var showRepoList = function(response) {
   }
 };
 
-var showNameError = function(response) {
-  $("#show-name").text(error.responseJSON.message);
-};
-
 var showRepoError = function(response) {
   $("#show-repo-list").text(error.responseJSON.message);
 };
@@ -40,5 +40,7 @@ $(document).ready(function(event) {
     var usernameInput = $("#username-input").val();
     $("#show-repo-list").text(""); //Resets getRepos() to blank every time submit btn is entered
     var newAccount = new Account (usernameInput);
+    newAccount.getUser(showAccount, showNameError);
+    newAccount.getRepos(showRepoList, showRepoError);
   });
 });
