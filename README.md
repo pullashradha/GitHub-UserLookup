@@ -16,6 +16,8 @@ This program can only be accessed on computer with Git and Atom software and npm
 * To set up package managers, type the following into the command line:
   * $ npm install
   * $ bower install
+
+GitHub can only run 60 requests/hour to its API without a key, so a key is necessary for testing. Get a key through the Personal Access Tokens option in the settings for a GitHub account.
 * Create a .env file in the main directory. Use the following format to hold the API key:
   ```
   exports.apiKey = "[Key Value Here]";
