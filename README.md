@@ -1,4 +1,4 @@
-# GitHub User Lookup Webpage
+# GitHub User Lookup
 
 #### Modern JS Apps Independent Project for Epicodus, 08/05/2016
 
