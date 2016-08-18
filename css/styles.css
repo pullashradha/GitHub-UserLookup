@@ -9,6 +9,8 @@ body {
   font-size: 60pt;
 }
 
+/*-----------------------------------API Form Styling-----------------------------------*/
+
 p {
   text-align: center;
   font-size: 15pt;
@@ -34,6 +36,8 @@ form h2 {
   margin-top: 50px;
   font-size: 18pt;
 }
+
+/*-----------------------------------Account Styling-----------------------------------*/
 
 #account-info h1 {
   font-size: 35pt;

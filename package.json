@@ -2,8 +2,6 @@
   "name": "github-userlookup",
   "version": "1.0.0",
   "description": "#### Modern JS Apps Independent Project for Epicodus, 08/05/2016",
-  "main": "index.js",
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "bower-files": "^3.13.3",

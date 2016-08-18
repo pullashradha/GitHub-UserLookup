@@ -19,9 +19,9 @@ This program can only be accessed on computer with Git and Atom software and npm
 
 GitHub can only run 60 requests/hour to its API without a key, so a key is necessary for testing. Get a key through the Personal Access Tokens option in the settings for a GitHub account.
 * Create a .env file in the main directory. Use the following format to hold the API key:
-  ```
+  `
   exports.apiKey = "[Key Value Here]";
-  ```
+  `
 * To view the webpage, type the following:
   * $ gulp build
   * $ gulp server
@@ -32,7 +32,7 @@ No known bugs.
 
 ## Specifications
 
-The program should ... | Example Input | Example Output
+The program should... | Example Input | Example Output
 ----- | ----- | -----
 Input a GitHub username and output a list of the account's repos, including the repo descriptions | Username: pullashradha | "address-book: Practice with objects", "AddressBook: Address book web app"...
 
